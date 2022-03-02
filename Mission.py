@@ -24,15 +24,19 @@ import os.path
 import pickle
 
 
-#if os.path.exists('save.p'):
-#    game = pickle.load(open("save.p", "rb"))
-#else:
-#    game = Game()
-
-
-missions = ["Aqcuisition", "Annihilation", "Biotechvore", "Capture and Protect", "Countermeasures", "Decapitation", "Firefight", "Frostbyte", "Frontline", "Highly Classified", "Looting and Sabotage", "Mindwipe", "Panic Room", "Power Pack" "Quadrant Control", "Rescue", "Supplies", "Supremacy", "The Armory", "Unmasking"]
+missions = ["Acquisition", "Annihilation", "Biotechvore", "Capture and Protect", 
+        "Countermeasures", "Decapitation", "Firefight", "Frostbyte", 
+        "Frontline", "Highly Classified", "Looting and Sabotage", "Mindwipe", 
+        "Panic Room", "Power Pack" "Quadrant Control", "Rescue", 
+        "Supplies", "Supremacy", "The Armory", "Unmasking"]
 
 client = discord.Client()
+client.mission = "Unknown mission"
+client.prevMissions = [11, 4, 2, 11]
+
+if os.path.exists('save.p'):
+    client.mission, client.prevMissions = pickle.load(open("save.p", "rb"))
+
 
 
 @client.event
@@ -41,7 +45,25 @@ async def on_message(message):
         return
 
     if command(message, "random"):
-        await message.channel.send("You are playing " + missions[random.randint(0,19)])
+        missionID = client.prevMissions[0]
+        while missionID in client.prevMissions:
+            missionID = random.randint(0,19)
+            print("New mission: " + missions[missionID])
 
+        client.prevMissions = client.prevMissions[1:] + [missionID]
+        client.mission = missions[missionID]
 
+        pickle.dump([client.mission, client.prevMissions], open("save.p", "wb"))
+        await message.channel.send("You are playing " + client.mission )
+    
+    if command(message, "mission"):
+        await message.channel.send("You are playing " + client.mission )
+    
+    if command(message, "previous missions"):
+        await message.channel.send("Previous missions were " + ", ".join([missions[x] for x in client.prevMissions]))
+
+    
+    if command(message, "help"):
+        await message.channel.send("Commands are !random, !mission, !previous missions, !help" )
+    
 client.run(open("apikey.txt",'r').read().strip())
