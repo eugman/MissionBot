@@ -2,6 +2,9 @@
 apikey.txt
 
 
+#save file
+save.p
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
