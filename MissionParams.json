@@ -1,0 +1,164 @@
+{
+        "Acquisition": {
+          "description": "Activate and control Antennas, control the Tech Coffin!",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": [ "QAZ Creatures" ]
+        },
+        "B-pong": {
+          "description": "By the end of each game round, hold the Tracking Beacon on the enemy half of the map!",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": []
+        },
+        "Biotechvore": {
+          "description": "Try not to die to the BTV Zone or your enemy, and get ready to do classifieds!",
+          "hvt": 0,
+          "classifieds": 3,
+          "seasonrules": []
+        },
+        "Capture and Protect": {
+          "description": "Capture the Flag, but with guns!",
+          "hvt": 0,
+          "classifieds": 1,
+          "seasonrules": [ "Quantum Anomaly Zones", "Hazmat Ops" ]
+        },
+        "Countermeasures": {
+          "description": "Accomplish Current Mission Objectives from a pool of randomly selected Classifieds!",
+          "hvt": 3,
+          "classifieds": 0,
+          "seasonrules": [ "QAZ Creatures" ]
+        },
+        "Decapitation": {
+          "description": "Hope you didn't go to officer training, cuz otherwise you're on the menu. Kill more Lieutenants!",
+          "hvt": 2,
+          "classifieds": 0,
+          "seasonrules": [ "Quantum Anomaly Zones", "Hazmat Ops" ]
+        },
+        "Evacuation": {
+          "description": "Evacuate the Civillians! There are, uh, a lot of them. (Eugene's note: This is some real bullshit, right here",
+          "hvt": 2,
+          "classifieds": 1,
+          "seasonrules": []
+        },
+        "Firefight": {
+          "description": "Kill more specialists! And Lieutenants! And army points. And maybe grab some loot?",
+          "hvt": 1,
+          "classifieds": 3,
+          "seasonrules": [ "Quantum Anomaly Zones" ]
+        },
+        "Frostbyte": {
+          "description": "Kill more army points, dominate the exclusion zone, and don't freeze to death!",
+          "hvt": 1,
+          "classifieds": 2,
+          "seasonrules": [ "Hazmat Ops + Special Order" ]
+        },
+        "Frontline": {
+          "description": "Hold the zones, more points the closer you get to the enemy DZ!",
+          "hvt": 1,
+          "classifieds": 4,
+          "seasonrules": [ "Quantum Anomaly Zones", "Defensive Turret" ]
+        },
+        "Highly Classified": {
+          "description": "Perform more Main Classified Objectives than the enemy from the pool of 4!",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": [ "Joint Command" ]
+        },
+        "Last Launch": {
+          "description": "Evacuate your own units! Kill Specialists! A wacky balancing act in 3 parts.",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": []
+        },
+        "Looting and Sabotaging": {
+          "description": "Protect your AC2! Wreck the other nerd's AC2! Do a little looting on the side.",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": [ "Joint Command" ]
+        },
+        "Mindwipe": {
+          "description": "Discover and destroy the enemy server containing the rogue AI!",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": []
+        },
+        "Panic Room": {
+          "description": "Hold the panic room at the end of each game round! Don't die!",
+          "hvt": 0,
+          "classifieds": 1,
+          "seasonrules": [ "Joint Command" ]
+        },
+        "Power Pack": {
+          "description": "Activate Antennas and defend your console! Weird DZs on this one.",
+          "hvt": 1,
+          "classifieds": 2,
+          "seasonrules": [ "Defensive Turret" ]
+        },
+        "Supplies": {
+          "description": "Control supply boxes at the end of the game!",
+          "hvt": 1,
+          "classifieds": 2,
+          "seasonrules": [ "QAZ Creatures", "Intelcom Card (Counterespionage)" ]
+        },
+        "Supremacy": {
+          "description": "Hack consoles and dominate quadrants!",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": [ "QAZ Creatures", "Intelcom Card (Provisions)" ]
+        },
+        "The Armory": {
+          "description": "Dominate the Armory, and loot around!",
+          "hvt": 1,
+          "classifieds": 1,
+          "seasonrules": [ "Defensive Turret", "Intelcom Card (Support and Control)" ]
+        },
+        "Unmasking": {
+          "description": "Reveal and kill the enemy Designated Target!",
+          "hvt": 3,
+          "classifieds": 0,
+          "seasonrules": []
+        },
+        "Narrative Mission": {
+          "description": "Deliberate among yourselves, shoot a steindrage maybe",
+          "hvt": 0,
+          "classifieds": 0,
+          "seasonrules": []
+        },
+        "Resilience Operations": {
+          "description": "RNG! RNG! RNG!",
+          "hvt": 0,
+          "classifieds": 0,
+          "seasonrules": []
+        },
+        "Annihilation":{
+            "description": "Team Deathmatch! Get 'em 'fore they getchu",
+            "hvt": 0,
+            "classifieds": 0,
+            "seasonrules": [ "Defensive Turret" ]
+        },
+        "Battleground":{
+            "description": "Control 3 horizontal zones, kill the enemy Key Ops!",
+            "hvt": 0,
+            "classifieds": 0,
+            "seasonrules": [ "Key Ops" ]
+        },
+        "Cutthroat":{
+            "description": "Kill enemy lieutenants! Also use your Key Ops to kill people.",
+            "hvt": 0,
+            "classifieds": 0,
+            "seasonrules": [ "Key Ops" ]
+        },
+        "Superiority":{
+            "description": "Dominate more quadrants! Hack Consoles! Use a Key Ops to secure the zone!",
+            "hvt": 0,
+            "classifieds": 0,
+            "seasonrules": [ "Key Ops" ]
+        },
+        "Uplink Center":{
+            "description": "Activate and control Communication Antennas/Tech Coffins! Keep your LT alive!",
+            "hvt": 0,
+            "classifieds": 0,
+            "seasonrules": []
+        }
+}
