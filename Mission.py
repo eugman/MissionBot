@@ -38,7 +38,7 @@ narrativeMissions = []
 
 client = discord.Client()
 client.mission = "Acquisition"
-client.prevMissions = []
+client.prevMissions = [1,1,1,1]
 
 if os.path.exists('save.p'):
     client.mission, client.prevMissions = pickle.load(open("save.p", "rb"))
