@@ -57,7 +57,7 @@ narrativeMissions = []
 
 
 
-lient = discord.Client(intents=discord.Intents.default())
+client = discord.Client(intents=discord.Intents.default())
 client.currentMission = "Acquisition"
 client.missionData = missions[client.currentMission]
 client.prevMissions = [1, 1, 1, 1]
@@ -123,6 +123,8 @@ async def on_message(message):
         pickle.dump([client.currentMission, client.prevMissions], open("save.p", "wb"))
         await message.channel.send("You are playing " + client.currentMission )
         await message.channel.send("Description: " + client.missionData["description"] )
+        if client.missionData["reinforcements"] and random.randint(0, 4) == 0:
+            await message.channel.send("Description: " + client.missionData["description"] )
     
 
     if command(message, "help"):
