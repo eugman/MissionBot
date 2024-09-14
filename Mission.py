@@ -52,12 +52,11 @@ missionSummary = ["Activate the antennas, control the antennas, control the tech
 narrativeMissions = []
 '''
 
+intents = discord.Intents.default()
+intents.message_content = True
 
+client = discord.Client(intents=intents)
 
-
-
-
-client = discord.Client(intents=discord.Intents.default())
 client.currentMission = "Acquisition"
 client.missionData = missions[client.currentMission]
 client.prevMissions = [1, 1, 1, 1]
@@ -72,6 +71,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+
     if message.author == client.user:
         return
 
