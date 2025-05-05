@@ -77,9 +77,6 @@ async def on_message(message):
 
     if command(message, "random"):
         
-        if message.author.name == "metalface13":
-            await message.channel.send("I can't let you do that, Casey")
-            return
             
 #Todo: refactor code s.t. you're pulling from new mission data
 # Option: do the list-ening of the dict outside the loop for computational efficiency
@@ -116,6 +113,7 @@ async def on_message(message):
     
     if command(message, "set"):
         missionID = int(message.content.split()[-1])-1
+        client.missionData = missions[client.currentMission]
         client.prevMissions = client.prevMissions[1:] + [missionID]
         client.currentMission = missionList[missionID]
         await client.change_presence(activity=discord.Game(client.currentMission))
