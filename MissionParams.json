@@ -41,8 +41,8 @@
 		  "reinforcements": 1,
           "seasonrules": [ "Quantum Anomaly Zones", "Hazmat Ops" ]
         },
-	"Evauation": {
-	  "description": "Extract cillians and HVTS",
+	"Evacuation": {
+	  "description": "Extract civilians and HVTs",
 	  "hvt": 4,
 	  "classifieds": 2,
 	  "reinforcements": 0,
