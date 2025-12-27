@@ -1,169 +1,121 @@
 {
-        "Acquisition": {
-          "description": "Activate and control Antennas, control the Tech Coffin!",
-          "hvt": 1,
-          "classifieds": 1,
-		  "reinforcements": 0,
-          "seasonrules": [ "QAZ Creatures" ]
-        },
-	"B-Pong": {
-	  "description": "BOING!",
-	  "hvt": 1,
-	  "classifieds": 1,
-	  "reinforcements": 0,
-	  "seasonrules": []
-	},  
-        "Biotechvore": {
-          "description": "Try not to die to the BTV Zone or your enemy, and get ready to do classifieds!",
-          "hvt": 0,
-          "classifieds": 3,
-		  "reinforcements": 0,
-          "seasonrules": []
-        },
-        "Capture and Protect": {
-          "description": "Capture the Flag, but with guns!",
-          "hvt": 0,
-          "classifieds": 1,
-		  "reinforcements": 0,
-          "seasonrules": [ "Quantum Anomaly Zones", "Hazmat Ops" ]
-        },
-        "Countermeasures": {
-          "description": "Accomplish Current Mission Objectives from a pool of randomly selected Classifieds!",
-          "hvt": 3,
-          "classifieds": 0,
-		  "reinforcements": 1,
-          "seasonrules": [ "QAZ Creatures" ]
-        },
-        "Decapitation": {
-          "description": "Hope you didn't go to officer training, cuz otherwise you're on the menu. Kill more Lieutenants!",
-          "hvt": 2,
-          "classifieds": 0,
-		  "reinforcements": 1,
-          "seasonrules": [ "Quantum Anomaly Zones", "Hazmat Ops" ]
-        },
-	"Evauation": {
-	  "description": "Extract cillians and HVTS",
-	  "hvt": 4,
-	  "classifieds": 2,
-	  "reinforcements": 0,
-	  "seasonrules": ["tactical objectives"]},
-        "Firefight": {
-          "description": "Kill more specialists! And Lieutenants! And army points. And maybe grab some loot?",
-          "hvt": 1,
-          "classifieds": 3,
-		  "reinforcements": 1,
-          "seasonrules": [ "Quantum Anomaly Zones" ]
-        },
-        "Frostbyte": {
-          "description": "Kill more army points, dominate the exclusion zone, and don't freeze to death!",
-          "hvt": 1,
-          "classifieds": 2,
-		  "reinforcements": 0,
-          "seasonrules": [ "Hazmat Ops + Special Order" ]
-        },
-        "Frontline": {
-          "description": "Hold the zones, more points the closer you get to the enemy DZ!",
-          "hvt": 1,
-          "classifieds": 4,
-		  "reinforcements": 0,
-          "seasonrules": [ "Quantum Anomaly Zones", "Defensive Turret" ]
-        },
-        "Highly Classified": {
-          "description": "Perform more Main Classified Objectives than the enemy from the pool of 4!",
-          "hvt": 1,
-          "classifieds": 1,
-		  "reinforcements": 1,
-          "seasonrules": [ "Joint Command" ]
-        },
-        "Mindwipe": {
-          "description": "Discover and destroy the enemy server containing the rogue AI!",
-          "hvt": 1,
-          "classifieds": 1,
-		  "reinforcements": 1,
-          "seasonrules": []
-        },
-        "Panic Room": {
-          "description": "Hold the panic room at the end of each game round! Don't die!",
-          "hvt": 0,
-          "classifieds": 1,
-		  "reinforcements": 0,
-          "seasonrules": [ "Joint Command" ]
-        },
-        "Supplies": {
-          "description": "Control supply boxes at the end of the game!",
-          "hvt": 1,
-          "classifieds": 2,
-		  "reinforcements": 1,
-          "seasonrules": [ "QAZ Creatures", "Intelcom Card (Counterespionage)" ]
-        },
-        "Supremacy": {
-          "description": "Hack consoles and dominate quadrants!",
-          "hvt": 1,
-          "classifieds": 1,
-		  "reinforcements": 0,
-          "seasonrules": [ "QAZ Creatures", "Intelcom Card (Provisions)" ]
-        },
-        "The Armory": {
-          "description": "Dominate the Armory, and loot around!",
-          "hvt": 1,
-          "classifieds": 1,
-		  "reinforcements": 0,
-          "seasonrules": [ "Defensive Turret", "Intelcom Card (Support and Control)" ]
-        },
-        "Unmasking": {
-          "description": "Reveal and kill the enemy Designated Target!",
-          "hvt": 3,
-          "classifieds": 0,
-		  "reinforcements": 1,
-          "seasonrules": []
-        },
-        "Narrative Mission / BAMS": {
-          "description": "Deliberate among yourselves, shoot a steindrage maybe",
-          "hvt": 0,
-          "classifieds": 0,
-		  "reinforcements": 0,
-          "seasonrules": []
-        },
-        "Resilience Operations": {
-          "description": "RNG! RNG! RNG!",
-          "hvt": 0,
-          "classifieds": 0,
-		  "reinforcements": 0,
-          "seasonrules": []
-        },
-        "Annihilation":{
-            "description": "Team Deathmatch! Get 'em 'fore they getchu",
-            "hvt": 0,
-            "classifieds": 0,
-		    "reinforcements": 0,
-            "seasonrules": [ "Defensive Turret" ]
-        },
-        "Battleground":{
-            "description": "Control 3 horizontal zones, kill the enemy Key Ops!",
-            "hvt": 0,
-            "classifieds": 0,
-		    "reinforcements": 0,
-            "seasonrules": [ "Key Ops" ]
-        },
-        "Cutthroat":{
-            "description": "Kill enemy lieutenants! Also use your Key Ops to kill people.",
-            "hvt": 0,
-            "classifieds": 0,
-		    "reinforcements": 1,
-            "seasonrules": [ "Key Ops" ]
-        },
-        "Superiority":{
-            "description": "Dominate more quadrants! Hack Consoles! Use a Key Ops to secure the zone!",
-            "hvt": 0,
-            "classifieds": 0,
-		    "reinforcements": 0,
-            "seasonrules": [ "Key Ops" ]
-        },
-        "Uplink Center":{
-            "description": "Activate and control Communication Antennas/Tech Coffins! Keep your LT alive!",
-            "hvt": 0,
-            "classifieds": 0,
-		    "reinforcements": 0,
-            "seasonrules": []
-        }
+  "Akial Interference": {
+    "description": "Accomplish Classified Objectives, interfere with enemy comms via the Akial Antenna!",
+    "hvt": 4,
+    "classifieds": 1,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "B-Pong": {
+    "description": "BOING! Control the Tracking Beacon and push it into enemy territory!",
+    "hvt": 1,
+    "classifieds": 2,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Corporate Appropriation": {
+    "description": "Capture the enemy Prototype, protect or destroy yours!",
+    "hvt": 0,
+    "classifieds": 3,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Critical Intervention": {
+    "description": "Attacker vs Defender - Extract the Data Pack from the Server Room!",
+    "hvt": 0,
+    "classifieds": 1,
+    "reinforcements": 1,
+    "seasonrules": ["INTELCOM Card (Support and Control)"]
+  },
+  "Crossing Lines": {
+    "description": "Dominate Dead Zones and Activate Antennas in crossed deployment zones!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 0,
+    "seasonrules": []
+  },
+  "Evacuation": {
+    "description": "Extract Civilians and enemy HVTs!",
+    "hvt": 4,
+    "classifieds": 2,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Hardlock": {
+    "description": "Control enemy Beacons and Activate Consoles!",
+    "hvt": 1,
+    "classifieds": 1,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Last Launch": {
+    "description": "Extract Troopers via the Launching Tower, kill enemy Specialists!",
+    "hvt": 1,
+    "classifieds": 3,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Provisioning": {
+    "description": "Control Supply Boxes and deposit them in your Safe Area!",
+    "hvt": 1,
+    "classifieds": 1,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Zone of Interest": {
+    "description": "Dominate Zones of Interest and control the Communication Antenna!",
+    "hvt": 1,
+    "classifieds": 1,
+    "reinforcements": 1,
+    "seasonrules": ["INTELCOM Card (Support and Control)"]
+  },
+  "Annihilation": {
+    "description": "Team Deathmatch! Kill more army points and the enemy Lieutenant!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Battleground": {
+    "description": "Control 3 horizontal Sectors, use your Key Ops!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 0,
+    "seasonrules": ["Key Ops"]
+  },
+  "Cutthroat": {
+    "description": "Kill enemy Lieutenants and use your Key Ops to score kills!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 1,
+    "seasonrules": ["Key Ops"]
+  },
+  "Superiority": {
+    "description": "Dominate Quadrants, Hack Consoles, have a Dominant Key Ops!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 0,
+    "seasonrules": ["Key Ops"]
+  },
+  "Uplink Center": {
+    "description": "Activate and Control Communication Antennas and the Tech-Coffin! Keep your LT alive!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 1,
+    "seasonrules": []
+  },
+  "Narrative Mission / BAMS": {
+    "description": "Deliberate among yourselves, shoot a steindrage maybe",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 0,
+    "seasonrules": []
+  },
+  "Resilience Operations": {
+    "description": "RNG! RNG! RNG!",
+    "hvt": 0,
+    "classifieds": 0,
+    "reinforcements": 0,
+    "seasonrules": []
+  }
 }
