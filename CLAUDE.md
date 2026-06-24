@@ -18,19 +18,15 @@ On the Pi the `.env` is loaded into the service by `EnvironmentFile=` in
 ## Deployment
 
 The bot runs on a Raspberry Pi as a systemd service (`discordbot.service`,
-running as root). Access:
+running as root). The canonical unit file lives in this repo as
+`discordbot.service` and is installed to `/etc/systemd/system/`.
 
-```bash
-ssh pi2            # uses the ~/.ssh/config alias (user: pi). The repo is ~/MissionBot
-```
-
-The canonical unit file lives in this repo as `discordbot.service` and is
-installed to `/etc/systemd/system/`.
+**SSH into the Pi first**, then run the commands below from the machine (they
+assume you are in an interactive session and the repo is at `~/MissionBot`).
 
 ### First-time setup (new Pi / fresh install)
 
 ```bash
-ssh pi2
 cd ~/MissionBot
 git pull
 cp .env.sample .env          # then edit .env: set DISCORD_TOKEN + MISSION_CHANNEL_ID
@@ -46,20 +42,27 @@ sudo systemctl enable --now discordbot
 After pushing to GitHub:
 
 ```bash
-ssh pi2 "cd ~/MissionBot && git pull && sudo systemctl restart discordbot"
+cd ~/MissionBot
+git pull
+sudo systemctl restart discordbot
 ```
 
 If the service unit itself changed, also reinstall it before restarting:
 
 ```bash
-ssh pi2 "cd ~/MissionBot && git pull && sudo cp discordbot.service /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl restart discordbot"
+cd ~/MissionBot
+git pull
+sudo cp discordbot.service /etc/systemd/system/discordbot.service
+sudo systemctl daemon-reload
+sudo systemctl restart discordbot
 ```
 
 ### Verify
 
 ```bash
-ssh pi2 "systemctl is-active discordbot && systemctl status discordbot --no-pager | head -5"
-ssh pi2 "sudo journalctl -u discordbot -n 30 --no-pager"
+systemctl is-active discordbot
+systemctl status discordbot --no-pager | head -5
+sudo journalctl -u discordbot -n 30 --no-pager
 ```
 
 A healthy start logs `discord.gateway: Shard ID None has connected to Gateway`
