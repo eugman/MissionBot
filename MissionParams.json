@@ -15,14 +15,14 @@
   },
   "Corporate Appropriation": {
     "description": "Capture the enemy Prototype, protect or destroy yours!",
-    "hvt": 0,
+    "hvt": 1,
     "classifieds": 3,
     "reinforcements": 1,
     "seasonrules": []
   },
   "Critical Intervention": {
     "description": "Attacker vs Defender - Extract the Data Pack from the Server Room!",
-    "hvt": 0,
+    "hvt": 1,
     "classifieds": 1,
     "reinforcements": 1,
     "seasonrules": ["INTELCOM Card (Support and Control)"]
@@ -36,7 +36,7 @@
   },
   "Evacuation": {
     "description": "Extract Civilians and enemy HVTs!",
-    "hvt": 4,
+    "hvt": 2,
     "classifieds": 2,
     "reinforcements": 1,
     "seasonrules": []
@@ -105,6 +105,7 @@
     "seasonrules": []
   },
   "Narrative Mission / BAMS": {
+    "_internalNote": "Custom / non-canonical — not in the official ITS S17 rulebook.",
     "description": "Deliberate among yourselves, shoot a steindrage maybe",
     "hvt": 0,
     "classifieds": 0,
@@ -115,7 +116,7 @@
     "description": "RNG! RNG! RNG!",
     "hvt": 0,
     "classifieds": 0,
-    "reinforcements": 0,
+    "reinforcements": 1,
     "seasonrules": []
   }
 }
