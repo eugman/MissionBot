@@ -1,0 +1,17 @@
+[Unit]
+Description=MissionBot Discord Bot
+After=network-online.target
+Wants=network-online.target
+# Never give up restarting: disable the start-rate limiter so Restart=always
+# (with RestartSec below) can't trip StartLimitBurst and leave the bot dead.
+StartLimitIntervalSec=0
+
+[Service]
+WorkingDirectory=/home/pi/MissionBot
+EnvironmentFile=-/home/pi/MissionBot/.env
+ExecStart=/usr/bin/python3 /home/pi/MissionBot/Mission.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

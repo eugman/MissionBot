@@ -13,7 +13,7 @@ Configuration comes from environment variables (see `.env.sample`). Copy it to
 On the Raspberry Pi the `.env` is loaded by systemd via
 `EnvironmentFile=-/home/pi/MissionBot/.env` in `discordbot.service`.
 
-To install dicord.py run the following:
+To install discord.py run the following:
 ```
 python3 -m pip install -U discord.py
 ```
